@@ -182,7 +182,7 @@ gulp.task('aria', function() {
 gulp.task('watcher', ['include', 'sass', 'js', 'imagemin', 'fonts'], function() {
     browserSync({
         server: "./render/",
-        index: "/templates/layouts/index.html"
+        index: "/templates/layouts/home.html"
     });
     gulp.watch("cwd/assets/sass/*.scss", ['sass']).on('error', gutil.log);
     gulp.watch("cwd/**/**/*.html", ['include']);
