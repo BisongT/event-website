@@ -177,12 +177,12 @@ gulp.task('aria', function() {
     })).pipe(gulp.dest('render/'));
 });
 /*===============================
-=        Watcher General        =
+=        Watcher General - homepage       =
 ===============================*/
 gulp.task('watcher', ['include', 'sass', 'js', 'imagemin', 'fonts'], function() {
     browserSync({
         server: "./render/",
-        index: "/templates/layouts/home.html"
+        index: "/templates/layouts/temp_site_event.html"
     });
     gulp.watch("cwd/assets/sass/*.scss", ['sass']).on('error', gutil.log);
     gulp.watch("cwd/**/**/*.html", ['include']);
