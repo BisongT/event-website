@@ -69,6 +69,7 @@ nav ul li:hover .submenu {
 
 nav ul li:hover a {
   background-color: $color-base;
+  text-decoration: none;
 }
 
 
@@ -103,66 +104,30 @@ p{
 
 
 /* Card  CSS for the events page */
-
-.lib-panel {
-    margin-bottom: 20Px;
-}
-.lib-panel img {
-    width: 100%;
-    background-color: transparent;
+   
+.container{
+  margin: 0, auto;
 }
 
-.lib-panel .row,
-.lib-panel .col-md-6 {
-    padding: 0;
-    background-color: #FFFFFF;
+.card_style{
+  position: relative;
+  margin-bottom: 20px;
+  width:100%;
 }
-
-
-.lib-panel .lib-row {
-    padding: 0 20px 0 20px;
+img {
+  width:100%;
+  height:70%;
 }
-
-.lib-panel .lib-row.lib-header {
-    background-color: #FFFFFF;
-    font-size: 20px;
-    padding: 10px 20px 0 20px;
-}
-
-.lib-panel .lib-row.lib-header .lib-header-seperator {
-    height: 2px;
-    width: 26px;
-    background-color: #d9d9d9;
-    margin: 7px 0 7px 0;
-}
-
-.lib-panel .lib-row.lib-desc {
-    position: relative;
-    height: 40%;
-    display: block;
-    font-size: 13px;
-}
-.lib-panel .lib-row.lib-desc a{
+.label{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.5);
     position: absolute;
+    bottom:0px;
+    float: left;
+    padding:20px;
     width: 100%;
-    bottom: 10px;
-    left: 20px;
-}
-
-.row-margin-bottom {
-    margin-bottom: 20px;
-}
-
-.box-shadow {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-}
-
-.no-padding {
-    padding: 0;
-}
-
-
+  }
+ 
 
 /* CSS Footer section */
 
