@@ -1,5 +1,8 @@
 $color-base: #fff;
 $color-accent: #00b6e3;
+$color-decor: #999966;
+$color-test: #663300;
+$color-green: #0A1A71;
 
 *{
   margin: 0px;
@@ -9,7 +12,7 @@ $color-accent: #00b6e3;
 #top {
   position: relative;
   width: 100%; height: 120px;
-  background: $color-accent;
+  background: $color-green;
   display: table;
   h1 {
     display: table-cell;
@@ -90,12 +93,15 @@ nav ul li:hover a {
 }
 
 section{
-  padding-top: 25px;
+  padding-top: 10px;
+  a:hover {
+    text-decoration: none;
+
+  }
 }
 
 section h1{
   text-align: center;
-  padding-bottom: 25px;
 }
 
 p{
@@ -167,6 +173,101 @@ img {
   }
 }
  
+
+/* h3 intro text for about page */
+
+.intro{
+  color: $color-decor;
+}
+
+.intro_text{
+  text-align: center; 
+  display: block;
+  font-weight: 400px;
+  color: $color-decor;
+  font-size: 20px;
+}
+
+/* Styling for card on services page */
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+.card span.card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 300px;
+   transition: all 0.8s ease;
+}
+
+
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  transition: all 0.8s ease;
+
+}
+/*.card:hover .card-image img {
+    width:110%;
+    height:auto;
+    transition: all 0.8s ease;
+    max-width:none;
+} */
+
+.card .card-content {
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+  text-align: center;
+}
+
+
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+  text-align: center;
+}
+
+.card .card-action a {
+  color: $color-decor;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+
+.card .card-action a:hover {
+  color: #ffd8a6;
+  text-decoration: none;
+}
 
 /* CSS Footer section */
 
